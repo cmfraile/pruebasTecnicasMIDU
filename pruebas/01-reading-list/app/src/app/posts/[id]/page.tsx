@@ -1,7 +1,9 @@
 import Like from "./like.component"
 
 const FetchExample = () =>
-    fetch('https://reqres.in/api/unknown')
+    fetch('https://reqres.in/api/unknown',{
+        next:{ revalidate:120 }
+    })
     .then(resp => resp.json())
     .then(resp => resp.data)
 
