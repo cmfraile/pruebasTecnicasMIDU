@@ -1,7 +1,9 @@
-export default function Home() {
-  return (
-    <main>
-      <h1>Lorem ipsum dolor</h1>
-    </main>
+const Main = () => {
+  return(
+    <div className="container p-3">
+      <h1>Mi primera app de next</h1>
+    </div>
   )
 }
+
+export default Main
